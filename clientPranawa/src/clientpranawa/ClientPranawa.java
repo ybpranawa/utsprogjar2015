@@ -69,7 +69,7 @@ public class ClientPranawa {
                     arguments = new String(dum);
                     while (!arguments.endsWith("\n")) {
                         is.read(dum);
-                        arguments += new String(dum);
+                        arguments =arguments + new String(dum);
                     }
                     
                     String[] status = arguments.trim().split(" ");
